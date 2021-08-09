@@ -55,8 +55,8 @@ body {
     
 
     div{
-      width: 30px;
-      height: 30px;
+      min-width: 30px;
+      min-height: 30px;
       border-radius: 50%;
       background: rgb(163, 41, 41);
       color: white;
