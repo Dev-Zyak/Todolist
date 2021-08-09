@@ -23,7 +23,8 @@ class Container extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
+        <h1>To-do List </h1>
         <InputComponent addItem={this.addItem} />
 
         {this.state.todos.map((todo) => {

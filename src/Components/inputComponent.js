@@ -12,13 +12,15 @@ class inputComponent extends Component {
 
   addItem = () => {
     this.props.addItem(this.state.output);
+    this.setState({ output: "" });
+    document.querySelector("#text").value = null;
   };
 
   render() {
     return (
       <div className="inputComponent">
-        <input type="text" onChange={this.changeStateOutput} />
-        <button onClick={this.addItem}>Add</button>
+        <input type="text" id="text" onChange={this.changeStateOutput} />
+        <div onClick={this.addItem}>+</div>
       </div>
     );
   }

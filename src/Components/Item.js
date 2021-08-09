@@ -11,9 +11,9 @@ class Item extends Component {
 
   render() {
     return (
-      <div>
+      <div className="item">
         <h1>{this.props.text}</h1>
-        <button onClick={this.removeItem}> Remove </button>
+        <div onClick={this.removeItem}> x </div>
       </div>
     );
   }
